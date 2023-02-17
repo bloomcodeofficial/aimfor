@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../bin/live-reload.js", "../../src/analysguiden-analysappen/index.ts"],
+  "sourcesContent": ["new EventSource(`http://localhost:${SERVE_PORT}/esbuild`).addEventListener('change', () =>\n  location.reload()\n);\n", "const icon = document.querySelector('.omsx_icon');\nconst number = document.querySelector('.omxspi-text')?.innerHTML.split(';')[2];\n\nconst updateArrow = function () {\n  if (number < 0) {\n    icon?.classList.add('is-negative');\n  } else if (number > 0) {\n    icon?.classList.add('is-positive');\n  }\n};\n\nupdateArrow();\n"],
+  "mappings": ";;;AAAA,MAAI,YAAY,oBAAoB,aAAoB,EAAE;AAAA,IAAiB;AAAA,IAAU,MACnF,SAAS,OAAO;AAAA,EAClB;;;ACFA,MAAM,OAAO,SAAS,cAAc,YAAY;AAChD,MAAM,SAAS,SAAS,cAAc,cAAc,GAAG,UAAU,MAAM,GAAG,EAAE,CAAC;AAE7E,MAAM,cAAc,WAAY;AAC9B,QAAI,SAAS,GAAG;AACd,YAAM,UAAU,IAAI,aAAa;AAAA,IACnC,WAAW,SAAS,GAAG;AACrB,YAAM,UAAU,IAAI,aAAa;AAAA,IACnC;AAAA,EACF;AAEA,cAAY;",
+  "names": []
+}

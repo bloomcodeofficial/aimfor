@@ -1,1 +1,1 @@
-"use strict";(()=>{var e=document.querySelector(".omsx_icon"),s,t=Number((s=document.querySelector(".omxspi-text"))==null?void 0:s.innerHTML.slice(-5)),i=function(){t<0?e==null||e.classList.add("is-negative"):t>0&&(e==null||e.classList.add("is-positive"))};i();})();
+"use strict";(()=>{var e=document.querySelector(".omsx_icon"),t,s=(t=document.querySelector(".omxspi-text"))==null?void 0:t.innerHTML.split(";")[2],i=function(){s<0?e==null||e.classList.add("is-negative"):s>0&&(e==null||e.classList.add("is-positive"))};i();})();
