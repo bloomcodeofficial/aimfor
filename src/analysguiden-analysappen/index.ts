@@ -9,6 +9,8 @@ const updateArrow = function () {
     icon?.classList.add('is-negative');
   } else if (curUpdate > preUpdate) {
     icon?.classList.add('is-positive');
+  } else if (curUpdate === preUpdate) {
+    icon?.classList.remove('is-active', 'is-negative');
   }
 };
 updateArrow();
